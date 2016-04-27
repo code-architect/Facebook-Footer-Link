@@ -15,3 +15,6 @@ if(!defined('ABSPATH'))
 {
     exit;
 }
+
+// Load scripts from includes directory
+require_once(plugin_dir_path(__FILE__) . "/includes/ca-scripts.php"); 

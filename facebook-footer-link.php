@@ -17,4 +17,12 @@ if(!defined('ABSPATH'))
 }
 
 // Load scripts from includes directory
-require_once(plugin_dir_path(__FILE__) . "/includes/ca-scripts.php"); 
+require_once(plugin_dir_path(__FILE__) . "/includes/ca-scripts.php");
+
+// Load content
+require_once(plugin_dir_path(__FILE__) . "/includes/ca-content.php");
+
+// Load settings if we are on the admin side
+if(is_admin()) {
+    require_once(plugin_dir_path(__FILE__) . "/includes/ca-settings.php");
+}
